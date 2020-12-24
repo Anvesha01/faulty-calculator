@@ -1,0 +1,27 @@
+#faulty calculator
+num1=int(input("Enter first number: "))
+num2=int(input("Enter second number: "))
+op=input("Enter operation to be done:(+,-,*,/) ")
+if op=="+":
+    ans1 = num1 + num2
+    if ans1==56+9 or 9+56:
+        print(num1,op,num2,"= 77")
+    else:
+        print(ans1)
+elif op == "-":
+    ans2 = num1 - num2
+    print(ans2)
+elif op=="*":
+    ans3 = num1 * num2
+    if ans3==45*3 or 3*45:
+        print(num1,op,num2,"= 555")
+    else:
+        print(ans3)
+elif op=="/":
+    ans4 = num1 / num2
+    if ans4==56/6:
+        print(num1,op,num2,"= 4")
+    else:
+        print(ans4)
+else:
+    print("unvalid operation")
